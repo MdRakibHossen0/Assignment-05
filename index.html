@@ -104,6 +104,7 @@
               </div>
             </div>
           </section>
+          <hr class="mt-5 border-dashed border-t-2 ">
 
           <!-- Task Cards -->
           <section id="task-list" class="grid grid-cols-3 gap-4 mt-5">
@@ -118,10 +119,11 @@
               >
                 Fix Mobile Button Issue
               </h3>
-              <p class="text-sm text-gray-500 mt-2 bg-white p-2 truncate">
+              <p class="text-sm text-gray-500 mt-2 bg-white p-2 rounded-lg truncate">
                 Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly.
               </p>
+               <hr class="mt-2 border-dashed border-t-2 ">
               <div class="flex justify-between items-center mt-4">
                  <p class="text-sm text-gray-600"
                   >Deadline: <span class="font-semibold"><br>21 Feb 2025</span></p
@@ -140,9 +142,10 @@ and ensure onClick works properly.
               <h3 id="Add-Dark-text" class="text-lg font-semibold text-gray-800 mt-2">
                 Add Dark Mode
               </h3>
-              <p class="text-sm text-gray-500 mt-2 bg-white p-2 truncate">
+              <p class="text-sm text-gray-500 mt-2 bg-white p-2 rounded-lg truncate">
                 Store the user's preference in <br> localStorage, update CSS variables dynamically, and apply a smooth transition effect.
               </p>
+              <hr class="mt-2 border-dashed border-t-2 ">
               <div class="flex justify-between items-center mt-4">
                <p class="text-sm text-gray-600"
                   >Deadline: <span class="font-semibold"><br>21 April 2025</span></p
@@ -161,9 +164,10 @@ and ensure onClick works properly.
               <h3 id="Optimize-text" class="text-lg font-semibold text-gray-800 mt-2">
               Optimize  Home page 
               </h3>
-              <p class="text-sm text-gray-500 mt-2 bg-white p-2 truncate">
+              <p class="text-sm text-gray-500 mt-2 bg-white p-2 rounded-lg truncate">
                Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly.
               </p>
+              <hr class="mt-2 border-dashed border-t-2 ">
               <div class="flex justify-between items-center mt-4">
                  <p class="text-sm text-gray-600"
                   >Deadline: <span class="font-semibold"><br>10 March 2025</span></p
@@ -182,10 +186,11 @@ and ensure onClick works properly.
               <h3 id="Add-new-text" class="text-lg font-semibold text-gray-800 mt-2">
                 Add new emoji 🤲
               </h3>
-              <p class="text-sm text-gray-500 mt-2 bg-white p-2 truncate">
+              <p class="text-sm text-gray-500 mt-2 bg-white p-2 rounded-lg truncate">
                Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly.
               </p>
+              <hr class="mt-2 border-dashed border-t-2 ">
               <div class="flex justify-between items-center mt-4">
                 <p class="text-sm text-gray-600"
                   >Deadline: <span class="font-semibold"><br>21 March 2025</span></p
@@ -204,10 +209,11 @@ and ensure onClick works properly.
               <h3 id="ai-search-text" class="text-lg font-semibold text-gray-800 mt-2">
                 Integrate OpenAI API 
               </h3>
-              <p class="text-sm text-gray-500 mt-2 bg-white p-2 truncate">
+              <p class="text-sm text-gray-500 mt-2 bg-white p-2 rounded-lg truncate">
                Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly.
               </p>
+              <hr class="mt-2 border-dashed border-t-2 ">
               <div class="flex justify-between items-center mt-4">
                 <p class="text-sm text-gray-600"
                   >Deadline: <span class="font-semibold"><br>15 Jun 2025</span></p
@@ -226,10 +232,11 @@ and ensure onClick works properly.
               <h3 id="Job-Searching-text" class="text-lg font-semibold text-gray-800 mt-2">
                 Improve Job searching 
               </h3>
-              <p class="text-sm text-gray-500 mt-2 bg-white p-2 truncate">
+              <p class="text-sm text-gray-500 mt-2 bg-white p-2 rounded-lg truncate">
                  Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly.
               </p>
+              <hr class="mt-2 border-dashed border-t-2 ">
               <div class="flex justify-between items-center mt-4">
                 <p class="text-sm text-gray-600"
                   >Deadline: <span class="font-semibold"><br>01 March 2025</span></p
@@ -246,15 +253,25 @@ and ensure onClick works properly.
         </div>
         <!-- Activity Log -->
         <section class="col-span-3 mt-6  bg-gray-50 rounded-lg shadow space-y-3">
-          <h3 class="text-lg font-bold text-center text-gray-800">
+          <div class="flex items-center justify-center mt-5 gap-3">
+            <div>
+            <img src="./assets/activity.png" alt="">
+          </div>
+         <div>
+           <h3 class="text-xl font-bold text-center text-gray-800">
             Activity Log
           </h3>
-          <button
+         </div>
+          </div>
+          <div class="text-center">
+            <button
             id="clear-history"
-            class="bg-blue-500 text-center w-full text-white px-4 py-2 mt-3 rounded"
+            class="bg-blue-500 text-center  text-white px-4 py-2 font-semibold  rounded"
           >
             Clear History
           </button>
+          </div>
+          <hr class="mt-2 border-dashed border-t-2 ">
           <div id="activity-log"></div>
         </section>
       </div>
