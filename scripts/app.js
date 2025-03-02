@@ -1,11 +1,11 @@
-// header section theme changing randomly
+// header section theme changing randomly ....
 document.getElementById("theme-btn").addEventListener("click", function () {
   const bgBody = document.getElementById("bg-color");
   bgBody.style.backgroundColor = getRgbRandomColor();
 });
 
 // Task Assigned Value change
-// mobile button fix
+// mobile fix button
 document
   .getElementById("mobile-fix-btn")
   .addEventListener("click", function () {
@@ -72,7 +72,7 @@ document
     );
   });
 
-// remove element
+// remove the element
 document.getElementById("clear-history").addEventListener("click", function () {
   document.getElementById("activity-log").innerHTML = "";
 });
