@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevBoard</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts cdn -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <style>
+      .poppins-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
       .activity-log {
         background: #f3f4f6;
         padding: 10px;
@@ -13,21 +23,26 @@
       }
     </style>
   </head>
-  <body class="p-5" id="bg-color">
+  <body class="p-5 poppins-font " id="bg-color">
     <!-- Dashboard Container -->
     <div class="max-w-6xl mx-auto">
       <!-- Header -->
       <header
         class="flex justify-between items-center pb-4 bg-white shadow-lg rounded-lg p-5 mt-6"
       >
-        <h1 class="text-2xl font-bold text-gray-700">
+     <div class="flex items-center gap-3"> 
+       <div><img src="./assets/logo.png" alt=""></div>
+       <div>
+         <h1 class="text-2xl font-bold text-gray-700">
           Dev<span class="text-blue-500">Board</span>
         </h1>
+       </div>
+     </div>
         <div class="flex items-center space-x-4">
           <div
             class="checkBox-count flex items-center space-x-4 bg-[#F4F7FF] rounded-full py-2 px-5"
           >
-            <img class="w-7 h-7" src="./assets/img/checkbox.png" alt="" />
+            <img class="w-7 h-7" src="./assets/checkbox.png" alt="" />
             <span id="taskCount" class="text-black px-3 py-1 font-extrabold"
               >23</span
             >
@@ -35,7 +50,7 @@
           <img
             id="theme-btn"
             class="w-8 h-8 rounded-full cursor-pointer"
-            src="./assets/img/theme-btn.png"
+            src="./assets/theme-btn.png"
             alt=""
           />
         </div>
@@ -55,9 +70,9 @@
             <div
               class="flex justify-center gap-3 items-center bg-gradient-to-r col-span-6 to-blue-400 from-indigo-500"
             >
-              <img class="w-16 pl-2" src="./assets/img/board.png" alt="" />
+              <img class="w-16 pl-2" src="./assets/board.png" alt="" />
               <a
-                href="Blog.html"
+                href="blogs.html"
                 class="p-5 rounded-lg text-left text-white text-lg font-semibold"
                 >Discover Something New Today!</a
               >
@@ -70,7 +85,7 @@
               >
                 <img
                   class="w-7 h-7"
-                  src="./assets/img/calender.png"
+                  src="./assets/calender.png"
                   alt="Calendar"
                 />
               </div>
@@ -95,10 +110,10 @@
             <div class="task bg-gray-50 p-5 rounded-lg shadow">
               <span
                 class="text-sm text-gray-500 bg-blue-100 rounded-full p-2"
-                >Shop Ease</span
+                >ShopEase</span
               >
               <h3
-                id="mobile-btn-issu-text"
+                id="mobile-btn-text"
                 class="text-lg font-bold text-gray-800 mt-2"
               >
                 Fix Mobile Button Issue
@@ -111,7 +126,7 @@
                   >Deadline: 21 March 2025</span
                 >
                 <button
-                  id="mobile-btn-issu"
+                  id="mobile-fix-btn"
                   class="bg-blue-500 text-white px-3 py-1 text-sm rounded"
                 >
                   Completed
@@ -121,7 +136,7 @@
 
             <div class="task bg-gray-50 p-5 rounded-lg shadow">
               <span class="text-sm text-gray-500 bg-blue-100 rounded-full p-2">Soft Pay</span>
-              <h3 id="pay-btn-text" class="text-lg font-bold text-gray-800 mt-2">
+              <h3 id="Add-Dark-text" class="text-lg font-bold text-gray-800 mt-2">
                 Add Pay Success Modal
               </h3>
               <p class="text-sm text-gray-500 mt-2 bg-white p-2">
@@ -132,7 +147,7 @@
                   >Deadline: 25 March 2025</span
                 >
                 <button
-                  id="pay-btn"
+                  id="Add-Dark-Mode-btn"
                   class="bg-blue-500 text-white px-3 py-1 text-sm rounded"
                 >
                   Completed
@@ -142,7 +157,7 @@
 
             <div class="task bg-gray-50 p-5 rounded-lg shadow">
               <span class="text-sm text-gray-500 bg-blue-100 rounded-full p-2">Meta</span>
-              <h3 id="rection-text" class="text-lg font-bold text-gray-800 mt-2">
+              <h3 id="Optimize-text" class="text-lg font-bold text-gray-800 mt-2">
                 Add New Reaction 🙌
               </h3>
               <p class="text-sm text-gray-500 mt-2 bg-white p-2">
@@ -153,7 +168,7 @@
                   >Deadline: 31 March 2025</span
                 >
                 <button
-                  id="rection-btn"
+                  id="Optimize-btn"
                   class="bg-blue-500 text-white px-3 py-1 text-sm rounded"
                 >
                   Completed
@@ -163,7 +178,7 @@
 
             <div class="task bg-gray-50 p-5 rounded-lg shadow">
               <span class="text-sm text-gray-500 bg-blue-100 rounded-full p-2"> Programming Hero</span>
-              <h3 id="video-issu-text" class="text-lg font-bold text-gray-800 mt-2">
+              <h3 id="Add-new-text" class="text-lg font-bold text-gray-800 mt-2">
                 Fix Video Loading Issue
               </h3>
               <p class="text-sm text-gray-500 mt-2 bg-white p-2">
@@ -174,7 +189,7 @@
                   >Deadline: 21 March 2025</span
                 >
                 <button
-                  id="video-issu-btn"
+                  id="Add-new-btn"
                   class="bg-blue-500 text-white px-3 py-1 text-sm rounded"
                 >
                   Completed
@@ -205,7 +220,7 @@
 
             <div class="task bg-gray-50 p-5 rounded-lg shadow">
                 <span class="text-sm text-gray-500 bg-blue-100 rounded-full p-2">Polygon Tech</span>
-              <h3 id="probasi-text" class="text-lg font-bold text-gray-800 mt-2">
+              <h3 id="Job-Searching-text" class="text-lg font-bold text-gray-800 mt-2">
                 Review Ami Probashi Site
               </h3>
               <p class="text-sm text-gray-500 mt-2 bg-white p-2">
@@ -214,7 +229,7 @@
               <div class="flex justify-between items-center mt-4">
                 <span class="text-sm text-gray-600">Deadline: 5 May 2025</span>
                 <button
-                  id="probasi-btn"
+                  id="job-searching-btn"
                   class="bg-blue-500 text-white px-3 py-1 text-sm rounded"
                 >
                   Completed
@@ -239,7 +254,7 @@
       </div>
     </div>
 
-    <script src="./assets/javascripts/utility.js"></script>
-    <script src="./assets/javascripts/app.js"></script>
+    <script src="./scripts/utility.js"></script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>

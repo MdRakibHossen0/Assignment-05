@@ -26,7 +26,7 @@ document
       "task-assigned",
       "taskCount",
       "activity-log",
-      "Add-Dark-Mode-text"
+      "Add-Dark-text"
     );
   });
 // Optimize button
